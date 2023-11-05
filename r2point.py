@@ -50,7 +50,7 @@ class R2Point:
             return 1
         elif self.y >= 0 and self.y <= 3 and abs(self.x - 1.5) <= 2.5:
             return 1
-        elif min(self.dist(R2Point(0.0, 0.0)), self.dist(R2Point(0.0, 0.3)), \
+        elif min(self.dist(R2Point(0.0, 0.0)), self.dist(R2Point(0.0, 3.0)), \
             self.dist(R2Point(3.0, 0.0)), self.dist(R2Point(3.0, 3.0))) <= 1:
             return 1
         return 0
