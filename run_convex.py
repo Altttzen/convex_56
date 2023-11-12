@@ -8,5 +8,5 @@ try:
         f = f.add(R2Point())
         print(f"S = {f.area()}, P = {f.perimeter()}, C = {f.count_sq()}")
         print()
-except(EOFError, KeyboardInterrupt):
+except (EOFError, KeyboardInterrupt):
     print("\nStop")
