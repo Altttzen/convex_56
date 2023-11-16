@@ -92,6 +92,6 @@ class TestR2Point:
         a = R2Point(7.0, 9.0)
         assert a.is_dist() == 0
 
-    def test_is_dist2(self):
+    def test_is_dist6(self):
         a = R2Point(2/sqrt(2), 2/sqrt(2))
         assert approx(a.is_dist()) == 1

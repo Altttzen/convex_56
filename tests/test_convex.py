@@ -30,6 +30,9 @@ class TestVoid:
     def test_add(self):
         assert isinstance(self.f.add(R2Point(0.0, 0.0)), Point)
 
+    def test_count_void(self):
+        assert self.f.count_sq() == 0
+
 
 class TestPoint:
 
@@ -60,6 +63,9 @@ class TestPoint:
     # При добавлении точки одноугольник может превратиться в двуугольник
     def test_add2(self):
         assert isinstance(self.f.add(R2Point(1.0, 0.0)), Segment)
+
+    def test_count_point(self):
+        assert self.f.count_sq() == 1
 
 
 class TestSegment:
@@ -95,6 +101,9 @@ class TestSegment:
     # При добавлении точки двуугольник может превратиться в треугольник
     def test_add2(self):
         assert isinstance(self.f.add(R2Point(0.0, 1.0)), Polygon)
+
+    def test_count_Segment(self):
+        assert self.f.count_sq() == 2
 
 
 class TestPolygon:
@@ -187,3 +196,5 @@ class TestPolygon:
         assert self.f.add(R2Point(
             2.0, 4.0)).add(R2Point(
                 4.0, 5.0)).add(R2Point(-1.0, -0.5)).count_sq() == 2
+
+    
