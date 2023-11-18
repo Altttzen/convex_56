@@ -196,5 +196,3 @@ class TestPolygon:
         assert self.f.add(R2Point(
             2.0, 4.0)).add(R2Point(
                 4.0, 5.0)).add(R2Point(-1.0, -0.5)).count_sq() == 2
-
-    
